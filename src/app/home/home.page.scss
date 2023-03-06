@@ -1,27 +1,85 @@
-#container {
+$size1: 9em;
+$size2: 3.5em;
+$size3: 3em;
+$size4: 2em;
+$size5: 1.5em;
+$size6: 1em;
+
+ion-content {
+  --ion-font-family: 'Roboto', sans-serif;
+}
+
+ion-header {
+  --ion-text-color: #555;
+}
+
+ion-content {
+  --background: linear-gradient(#2980b9, #6dd5fa) !important;
+  --ion-text-color: #222;
+}
+
+.main {
+  display: block;
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.city {
+  display: block;
+  font-size: $size3;
+  font-weight: bold;
+  padding-top: 0.2em;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+.date {
+  display: block;
+  font-size: $size5;
+  font-weight: bold;
+}
 
-  color: #8c8c8c;
+.description {
+  display: block;
+  font-size: $size3;
+  font-weight: bold;
+}
 
+.temperature {
+  display: block;
+  font-size: $size1;
+  padding: 0;
   margin: 0;
 }
 
-#container a {
-  text-decoration: none;
+.icon {
+  display: block;
+  font-size: $size4;
+  padding-top: 0;
+}
+
+ion-grid {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.day {
+display: block;
+font-weight: bold;
+}
+
+.precipitation {
+  display: block;
+}
+
+.icon-sm {
+  display: block;
+}
+
+.hi-sm {
+  display: block;
+}
+
+
+.lo-sm {
+  display: block;
 }
