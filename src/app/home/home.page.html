@@ -7,14 +7,15 @@
 <ion-content [fullscreen]="true">
   <div class="main">
     <span class="city">Crystal Lake, IL</span>
-    <span class="date">Thu, 3:45pm</span>
+    <span class="date">{{ res.current_weather.time }}</span>
+    <span class="date">{{ 1678152213 | day }}</span>
 
     <div class="icon">
       <img src="../../assets/2x.png" alt="">
     </div>
 
     <span class="description">Cloudy</span>
-    <span class="temperature">18°</span>
+    <span class="temperature">{{ res.current_weather.temperature | number: '1.0-0' }}°</span>
   </div>
 
   <ion-grid>
@@ -29,13 +30,13 @@
     </ion-row>
 
     <ion-row>
-    <ion-col class="precipitation">60%</ion-col>
-    <ion-col class="precipitation">-</ion-col>
-    <ion-col class="precipitation">20%</ion-col>
-    <ion-col class="precipitation">60%</ion-col>
-    <ion-col class="precipitation">-</ion-col>
-    <ion-col class="precipitation">-</ion-col>
-    <ion-col class="precipitation">-</ion-col>
+      <ion-col class="precipitation">60%</ion-col>
+      <ion-col class="precipitation">-</ion-col>
+      <ion-col class="precipitation">20%</ion-col>
+      <ion-col class="precipitation">60%</ion-col>
+      <ion-col class="precipitation">-</ion-col>
+      <ion-col class="precipitation">-</ion-col>
+      <ion-col class="precipitation">-</ion-col>
     </ion-row>
 
     <ion-row>
@@ -67,6 +68,6 @@
       <ion-col class="lo-sm">16°</ion-col>
       <ion-col class="lo-sm">17°</ion-col>
     </ion-row>
-  
+
   </ion-grid>
 </ion-content>
