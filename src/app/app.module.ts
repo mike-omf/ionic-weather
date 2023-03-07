@@ -8,10 +8,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { HttpClientModule } from '@angular/common/http';
-import { DayPipe } from './pipes/day.pipe';
+// import { DayPipe } from './pipes/day.pipe';
 import { DateFormattingPipe } from './pipes/date-formatting.pipe';
 @NgModule({
-  declarations: [AppComponent, DayPipe, DateFormattingPipe],
+  declarations: [AppComponent, DateFormattingPipe],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

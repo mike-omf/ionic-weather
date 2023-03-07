@@ -16,7 +16,6 @@ import { DayPipe } from '../pipes/day.pipe';
     HomePageRoutingModule
   ],
   declarations: [HomePage, DayPipe],
-  exports: [DayPipe]
 })
 
 export class HomePageModule {}
